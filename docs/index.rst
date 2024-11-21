@@ -1,0 +1,5 @@
+====================
+ushare.core
+====================
+
+User documentation

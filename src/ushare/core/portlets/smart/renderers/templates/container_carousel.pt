@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag=""
+      tal:condition="not:view/isAnon"
+      i18n:domain="base">
+
+<tal:items tal:define="items view/portlet/results;
+                       show_header view/portlet/data/show_header"
+           tal:condition="items">
+
+  <div id="portlet-smart"
+       tal:attributes="class python: 'ulearnbox show_header' if show_header else 'ulearnbox'">
+    <div class="osomcorner-wrapper"><div class="osomcorner"></div></div>
+
+    <h2 tal:condition="show_header"
+        tal:content="view/portlet/data/header"></h2>
+
+    <p tal:condition="view/portlet/data/description" tal:content="structure view/portlet/data/description"></p>
+
+    <div tal:define="carousel_id string:${view/getTitleIdPortlet}-carousel"
+         tal:attributes="id carousel_id;" class="carousel slide" data-interval="false">
+
+        <div class="carousel-inner">
+          <tal:carouselItem repeat="item items">
+            <div tal:define="isTheFirst repeat/item/start;
+                             renderer python:view.portlet.getItemRenderer(item)"
+                 tal:attributes="class python:(isTheFirst and 'item active ' or 'item ') + renderer['css_class']">
+
+              <tal:renderer replace="structure renderer/html">
+              </tal:renderer>
+
+            </div>
+          </tal:carouselItem>
+        </div>
+
+        <div class="carousel-ctrls" tal:condition="python:len(items) > 1">
+          <!-- Carousel nav -->
+          <a class="carousel-ctrl left" tal:attributes="href string:#${carousel_id}" data-slide="prev" onclick='pauseYT()'>&lsaquo;</a>
+          <a class="carousel-ctrl right" tal:attributes="href string:#${carousel_id}" data-slide="next" onclick='pauseYT()'>&rsaquo;</a>
+        </div>
+
+        <a tal:condition="view/portlet/data/more_link"
+           tal:attributes="href view/portlet/data/more_link"
+           tal:content="view/portlet/data/more_text"
+           class="more_link"></a>
+    </div>
+  </div>
+
+  <script tal:condition="view/portlet/isUlearn" type="text/javascript" src="++ulearn++portlets/smart/javascripts/smartYT.js"></script>
+</tal:items>
+
+</html>

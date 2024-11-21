@@ -1,0 +1,655 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-03-23 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: Spanish <plone-i18n@lists.sourceforge.net>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+### plone.app.disussion ###
+
+msgid "label_add_comment"
+msgstr "Añade un comentario"
+
+msgid "comment_description_plain_text"
+msgstr "Puede agregar un comentario rellenando el siguiente formulario."
+
+msgid "label_login_to_add_comments"
+msgstr "Inicia sesión para agregar comentarios"
+
+
+### plone.app.locales - Add/Edit type tabs and contents ###
+
+msgid "Categorization"
+msgstr "Categorización"
+
+msgid "label_schema_categorization"
+msgstr "Categorización"
+
+msgid "label_schema_dates"
+msgstr "Fechas"
+
+msgid "label_schema_default"
+msgstr "Defecto"
+
+msgid "label_schema_ownership"
+msgstr "Propietario"
+
+msgid "This name will be displayed in the URL."
+msgstr "Este nombre se mostrará en la URL."
+
+msgid "Short name"
+msgstr "Nombre corto"
+
+
+### plone.app.locales - fuzzy ###
+
+msgid "Discussion Items are documents which reply to other content.They should *not* be addable through the standard 'folder_factories' interface."
+msgstr "Los elementos de Debate son documentos que dan réplica a otro contenido. *No* deberían ser agregables a través del interfaz estándar 'folder_factories'"
+
+msgid "action_convert_legacy_portlets"
+msgstr "Se han definido aquí portlets heredados. Haga clic en el botón para convertirlos al nuevo estilo de portlets."
+
+msgid "alert_deleting_locked_item"
+msgstr "Este elemento no puede ser eliminado porque está actualmente bloqueado por otro usuario."
+
+msgid "alert_deleting_x_number_of_items"
+msgstr "(Esto eliminará un total de ${number_of_items_to_delete} elementos.)"
+
+msgid "author_feedback_mailtemplate_body"
+msgstr "Ha recibido este correo porque ${from_address} le ha enviado su opinión sobre el contenido que creó en ${url}."
+
+msgid "checkout_info"
+msgstr "Esta es una copia de trabajo de ${baseline_title}, realizada por ${creator} el ${created}."
+
+msgid "comment_description_intelligent_text"
+msgstr "Puede agregar un comentario llenando el siguiente formulario. Formato de texto plano. Las direcciones web y de correo electrónico se transforman en vínculos."
+
+msgid "comment_description_markdown"
+msgstr "Puede agregar un comentario llenando el siguiente formulario. Formato de texto plano. Usted puede usar la sintaxis Markdown para los enlaces e imágenes."
+
+msgid "contentrules_controlpanel_link"
+msgstr "Utilice el ${controlpanel_link} para crear nuevas reglas o eliminar o modificar las existentes."
+
+msgid "contentrules_description_execution"
+msgstr "Las reglas se ejecutan al ocurrir un evento de disparo. Las acciones de una regla sólo serán invocadas si se cumplen todas las condiciones de la regla. Puede agregar nuevas acciones y condiciones utilizando los siguientes botones."
+
+msgid "convert_relative_url"
+msgstr "Convertir los URLs relativos del archivo de tema a rutas absolutas mediante el uso de este prefijo."
+
+msgid "current_theme_description"
+msgstr "El nombre del tema actual, es decir, el aplicado más recientemente."
+
+msgid "description-contentrules-controlpanel"
+msgstr "Utilice el siguiente formulario para definir, cambiar o quitar reglas de contenido. Las reglas realizarán acciones en el contenido de forma automática al dispararse ciertos eventos. Tras definir las reglas, es posible que desee ir a una carpeta para asignarlas, utilizando el elemento \"reglas\" en el menú de acciones."
+
+msgid "description-contentrules-mailsub"
+msgstr "Parte del contenido en el asunto, código del correo, destinatario de correo y cuerpo del mensaje será reemplazado por variables \"$&#123;&#125;\" de la siguiente tabla."
+
+msgid "description_accessibility_statement"
+msgstr "Este sitio ha sido diseñado para acomodar a los distintos modos en los que la gente accede y usa Internet."
+
+msgid "description_advanced"
+msgstr "Utilice los siguientes campos para configurar el tema Diazo de forma manual. Normalmente, estas opciones son aplicadas al habilitar un tema de la pestaña <strong>Temas</strong>."
+
+msgid "description_advanced_base"
+msgstr "Las siguientes opciones controlan la presentación del <em>contenido</em> producido por Plone antes de que se aplique un tema Diazo. Tenga en cuenta que estas opciones tendrán efecto incluso si actualmente no ha habilitado un tema Diazo."
+
+msgid "description_basic_settings"
+msgstr "Utilice los botones para crear o subir un nuevo tema Diazo, o seleccione un tema existente de la siguiente lista."
+
+msgid "description_cancel"
+msgstr "Al cancelar la retirada de versión eliminará esta copia de trabajo y cualquier modificación realizada a la misma se perderá. La versión actual del contenido quedará desbloqueada."
+
+msgid "description_change_initial_password"
+msgstr "Antes de comenzar la navegación tendrá que cambiar su contraseña original. Esto asegurará que la contraseña que le enviamos por correo no sea usada de manera maliciosa."
+
+msgid "description_checkin"
+msgstr "Al guardar esta copia de trabajo reemplazará el elemento actual con la copia de trabajo."
+
+msgid "description_checkout"
+msgstr "Al retirar una versión, una copia de trabajo del elemento de contenido será creada en el contenedor seleccionado, y la original será bloqueada para evitar que otros usuarios la editen."
+
+msgid "description_contentrules_assigned_norules"
+msgstr "Actualmente no hay reglas de contenido activas en este ${type_name}."
+
+msgid "description_contenttype_portlets_below"
+msgstr "Tenga en cuenta que los portles de tipos de contenido normalmente se muestran bajo los portlets de contexto."
+
+msgid "description_copyright"
+msgstr "El ${plonecms} es ${copyright} 2000-${current_year} por la ${plonefoundation} y amigos."
+
+msgid "description_debug_mode"
+msgstr "Nota: Está corriendo en \"modo de depuración\". Este modo está pensado para sitios que están en desarrollo. Esto permite que muchos de los cambios a la configuración sean visibles inmediatamente, pero hará que su sitio funcione más lentamente. Para desactivar el modo de depuración, detenga su servidor, establezca 'debug-mode=off' en su buildout.cfg, ejecute de nuevo bin/buildout y reinicie el proceso servidor."
+
+msgid "description_edit_properties"
+msgstr "Esta información, también denominada <em>metadados</em>, es la colección de información que se usará para catalogar un elemento, asignando periodos de validez y fechas de caducidad, idioma y palabras claves. <br /> Cambie los metadatos del elemento usando el siguiente formulario. Recuerde que los metadatos son poderosos (nos permite hacer muchas catalogaciones útiles). Por ello, rellene los campos tan concisamente como le sea posible y deje los que desconozca vacíos."
+
+msgid "description_enable_cookies_to_stay_logged_in"
+msgstr "Nota: Si no continua la sesión tras dejar esta página, es porque no ha habilitado la utilización de cookies en su navegador."
+
+msgid "description_error_log_setup"
+msgstr "Esta página lista las excepciones que han ocurrido en este sitio recientemente. Puede configurar cuántas excepciones deberían guardarse y cuáles deberían ser copiadas al/a los archivo(s) de eventos de Zope."
+
+msgid "description_error_rerference_link"
+msgstr "Consulte la referencia de errores en plone.org para más información sobre estas excepciones."
+
+msgid "description_group_members_of"
+msgstr "Puede agregar o eliminar grupos y usuarios para este grupo en particular aquí. Observe que con esto no elimina al grupo o usuario, solamente lo elimina de este grupo."
+
+msgid "description_group_portlets_below"
+msgstr "Tenga en cuenta que los portlets de grupos normalmente se muestran bajo los portlets de contexto."
+
+msgid "description_groups_management"
+msgstr "Los grupos son colecciones lógicas de usuarios, como un departamento o una oficina. No están directamente ligados a permisos en un nivel global, así que normalmente use los Roles para eso - y permita que ciertos Grupos tengan un rol particular."
+
+msgid "description_groups_management2"
+msgstr "El símbolo ${image_link_icon} indica un rol heredado por la pertenencia a otro grupo."
+
+msgid "description_import"
+msgstr "Puede importar un archivo Zip que contenga un tema existente. Este debería contener una única carpeta de nivel superior, que será utilizada como el identificador del tema. Si no se encuentran los archivos de Diazo <code>rules.xml</code> o <code>manifest.cfg</code> en este directorio, se creará un archivo <code>rules.xml</code> por defecto."
+
+msgid "description_include_error_in_admin_message"
+msgstr "Si necesita informar de ésto a la ${site_admin}, por favor incluya este número de entrada en su mensaje."
+
+msgid "description_language_settings"
+msgstr "La configuración relacionada con el idioma utilizado para el interfaz de usuario y las traducciones de contenido."
+
+msgid "description_logged_in_explain"
+msgstr "Usted notará que la parte derecha de la barra superior ha cambiado. Ahora contiene varios elementos personalizados. Ellos permanecerán ahí tanto tiempo como permanezca en el sistema, y le permitirán controlar sus configuraciones y su área personal."
+
+msgid "description_lost_password"
+msgstr "Por motivos de seguridad, su contraseña se guarda cifrada en el sistema, y no puede ser enviada por correo. Si desea restablecer su contraseña, rellene el siguiente formulario y le enviaremos un correo a la dirección que proporcionó al registrarse para iniciar el proceso de restablecimiento de su contraseña."
+
+msgid "description_lost_password_mail_admin"
+msgstr "Si esto no le sirve (por ejemplo, si ha olvidado su nombre de usuario, o su dirección de correo ha cambiado), contacte con la ${site_admin}."
+
+msgid "description_lost_password_mail_admin_2"
+msgstr "Si esto no le sirve (por ejemplo, si su dirección de correo ha cambiado), contacte con la ${site_admin}."
+
+msgid "description_manage_contenttype_portlets"
+msgstr "Los espacios izquierdo y derecho para portlets ahora sólo mostrarán aquellos portlets asignados a este tipo de contenido. Utilice los enlaces subir, bajar, eliminar y editar para administrar los portlets de usuario. Utilice la lista desplegable para agregar nuevos portlets."
+
+msgid "description_manage_contextual_portlets"
+msgstr "Las columnas de portlet mostrarán primero los aquellos portlets explícitamente asignados en este contexto. Utilice los botones de cada portlet para subirlos, bajarlos, eliminaros o editarlos. Para agregar un nuevo portlet, utilice la lista desplegable en la parte superior de la columna."
+
+msgid "description_manage_group_portlets"
+msgstr "Los espacios izquierdo y derecho para portlets ahora sólo mostrarán aquellos portlets asignados a este grupo. Utilice los enlaces subir, bajar, eliminar y editar para administrar los portlets de usuario. Utilice la lista desplegable para agregar nuevos portlets."
+
+msgid "description_member_search"
+msgstr "Este formulario de búsqueda le permite encontrar miembros especificando uno o más criterios."
+
+msgid "description_no_account"
+msgstr "Si no tiene una cuenta aquí, vaya al ${registration_form} para convertirse en miembro."
+
+msgid "description_no_privileges_for_page"
+msgstr "No tiene suficientes permisos para ver esta página. Si cree que está recibiendo este mensaje por error, contacte con la ${site_admin}."
+
+msgid "description_no_visible_items_add_paste"
+msgstr "Esta carpeta no tiene elementos visibles. Para agregar contenido, presione el botón 'Agregar un nuevo elemento', o pegue contenido de otro lugar."
+
+msgid "description_no_workflow"
+msgstr "Este tipo no tiene un flujo de trabajo asociado. La visibilidad de los elementos de este tipo estará determinada por la carpeta a la que pertenecen."
+
+msgid "description_not_accept_cookies"
+msgstr "Si su nombre de usuario y contraseña son correctos, el problema puede residir en que su navegador no ha sido configurado para aceptar cookies."
+
+msgid "description_pas_group_listing"
+msgstr "Nota: Alguno o todos de sus complementos de origen de grupos PAS no permiten realizar listados de grupos, de modo que quizás no vea los grupos definidos por esos complementos salvo que haga una búsqueda específica."
+
+msgid "description_pas_users_listing"
+msgstr "Alguno o todos de sus complementos de origen de usuarios PAS no permiten realizar listados de usuarios, de modo que quizás no vea los usuarios definidos por esos complementos salvo que haga una búsqueda específica."
+
+msgid "description_password_reset_or_registered"
+msgstr "En breve recibirá un correo que contiene un URL que le permitirá establecer su contraseña. Cuando reciba este correo, por favor utilice el enlace para completar su proceso de registro. NOTA: El URL de restablecimiento de contraseña caduca en ${time} horas. Si su solicitud de restablecimiento de contraseña caduca, podrá utilizar el enlace \"Olvidó su contraseña\" para generar otra solicitud de restablecimiento de contraseña."
+
+msgid "description_portlets_block_unblock"
+msgstr "Si desea bloquear o desbloquear ciertas categorías de portlets, puede hacerlo utilizando las cajas desplegables. Los portlets incluidos en estas categorías se muestran a continuación en el cuadro de selección."
+
+msgid "description_production_mode"
+msgstr "Está corriendo en \"modo de producción\". Este es el modo preferido de operación para un sitio Plone en producción, pero implica que algunos cambios a la configuración no tomarán efecto hasta que su servidor sea reiniciado o un producto sea actualizado. Si esta instancia es de desarrollo y quiere habilitar el modo de depuración, detenga su servidor, establezca 'debug-mode=on' en su buildout.cfg, ejecute de nuevo bin/buildout y reinicie el proceso servidor."
+
+msgid "description_publishing_process_short"
+msgstr "El estado de un elemento (también llamado su estado de revisión) determina quién puede verlo. Otra forma de controlar la visibilidad de un elemento es con su <em class=\"discreet\">Fecha de Publicación </em>. Un elemento no puede ser buscado de forma pública antes de su fecha de publicación. Esto evita que el elemento se muestre en portlets y listados de carpetas, aunque el elemento seguirá estando disponible si es accedido directamente por su URL."
+
+msgid "description_registry"
+msgstr "La siguiente tabla muestra los registros actualmente gestionados por el registro de configuración. Haga clic en un registro para editarlo."
+
+msgid "description_rename_item"
+msgstr "Cada elemento tiene un Nombre y un Título, los cuales puede cambiar mediante la entrada de nuevos detalles abajo."
+
+msgid "description_select_default_page"
+msgstr "Por favor, seleccione el elemento que será utilizado como página por defecto para la carpeta."
+
+msgid "description_select_default_view"
+msgstr "Por favor, seleccione la plantilla que debe utilizarse como vista por defecto de la carpeta."
+
+msgid "description_send_page_url_to"
+msgstr "Introduzca la dirección de correo del destinatario y le enviaremos un correo con un enlace a esta página."
+
+msgid "description_sent_password"
+msgstr "Su solicitud de restablecimiento de contraseña ha sido enviada por correo. Debería recibir un correo en breve. Cuando reciba el mensaje, visite la dirección que contiene para restablecer su contraseña."
+
+msgid "description_sharing_control"
+msgstr "Puede controlar quién puede ver y editar su elemento utilizando la siguiente lista."
+
+msgid "description_sign_in"
+msgstr "Para acceder a esta parte del sitio, necesita identificarse usando su nombre y contraseña."
+
+msgid "description_site_error"
+msgstr "Lamentamos las molestias, pero la página a la que está intentando acceder no está en esta dirección. Puede utilizar los siguientes enlaces para ayudarle a encontrar lo que está buscando."
+
+msgid "description_site_error_mail_site_admin"
+msgstr "Si está seguro de que tiene la dirección web correcta, pero sigue encontrando un error, por favor contacte con la ${site_admin}."
+
+msgid "description_site_map"
+msgstr "Una visión general del contenido disponible en este sitio. Mantenga el cursor quieto sobre un elemento durante unos instantes para obtener su descripción."
+
+msgid "description_still_failure"
+msgstr "Si aún sigue viendo esta página después de corregir la configuración de su navegador, estas pueden ser algunas de las posibles razones:"
+
+msgid "description_still_failure_reason1"
+msgstr "Podría estar ejecutándose algún programa de filtrado web que deshabilita las cookies. Si así fuera, sería necesario que configurara ese programa para que acepte cookies de ${url}"
+
+msgid "description_still_failure_reason2"
+msgstr "Su ordenador puede que esté detrás de un cortafuegos o de un servidor proxy que previene que las cookies sean enviadas a o desde su navegador. Si así fuera, sería necesario que pregunte a su administrador de sistemas si el problema puede ser resuelto."
+
+msgid "description_syndication_properties"
+msgstr "La Sindicación le permite sindicar esta carpeta de modo que pueda ser sincronizada desde otros sitios web."
+
+msgid "description_types_setup"
+msgstr "La configuración de flujo de trabajo, visibilidad y versionado para sus tipos de contenido."
+
+msgid "description_user_registration_fields"
+msgstr "Seleccione los campos del formulario de registro. Los campos en el cuadro de la derecha se mostrarán en el formulario, y los de la izquierda estarán deshabilitados. Utilice los botones izquierda/derecha para mover un campo de la derecha a la izquierda (para deshabilitarlo) y viceversa. Utilice los botones de arriba/abajo para cambiar el orden en el que los campos aparecen en el formulario."
+
+msgid "description_validation"
+msgstr "Este sitio utiliza tecnología de asistencia como los roles WAI-ARIA con las mejores prácticas actuales: sin embargo, los estándares de sitios web y su contenido suele variar con el tiempo. Si este sitio web no se valida correctamente, contacte por favor con el ${site_admin}."
+
+msgid "description_wcag_aa_rating"
+msgstr "Algunos de los controles de las pautas ${wcag} 2.0 y ${atag} 2.0 son subjetivos; pueden haber casos sujetos a interpretación."
+
+msgid "description_webdav_locked_steal"
+msgstr "Si está seguro de que este usuario ha abandonado el objeto, puede ${unlock_button} el objeto. Tras esto, podrá editarlo."
+
+msgid "doctype_description"
+msgstr "Puede especificar la cadena con la expresión Doctype que será utilizada en la salida, por ejemplo \"<!DOCTYPE html>\". Si se deja en blanco, se utilizará el Doctype por defecto para XHTML 1.0 de transición, o el utilizado en el tema Diazo."
+
+msgid "enable_cookies_message"
+msgstr "Las cookies no están habilitadas. Debe ${enable_cookies} antes de iniciar la sesión."
+
+msgid "enable_cookies_message_before_login"
+msgstr "Las cookies no han sido habilitadas. Debe habilitar las cookies antes de iniciar la sesión."
+
+msgid "enable_theme_globally"
+msgstr "Utilice esta opción para habilitar o deshabilitar el tema de forma global. Tenga en cuenta que las opciones también determinarán si el tema es utilizado cuando esta opción esté habilitada."
+
+msgid "error_already_installed"
+msgstr "Este tema ya está instalado. Seleccione 'Reemplazar tema actual' y súbalo de nuevo para reemplazarlo."
+
+msgid "error_invalid_parameter_expressions"
+msgstr "Por favor, asegúrese de introducir una expresión por línea, en el formato <nombre> = <expresión>."
+
+msgid "error_vocabulary"
+msgstr "Los valores ${val} no están permitidos en el vocabulario del elemento ${label}."
+
+msgid "help_absolute_prefix"
+msgstr "Si su tema usa rutas relativas para las imágenes, hojas de estilos u otros recursos, puede introducir aquí un prefijo para garantizar que estos recursos funcionarán independientemente de la página que Plone esté mostrando."
+
+msgid "help_addcontenttype_button"
+msgstr "Haga clic sobre el botón \"Agregar tipo de contenido\" para comenzar a crear un nuevo tipo de contenido personalizado."
+
+msgid "help_allow_combined_language_codes"
+msgstr "Ejemplos: pt-br (Portugués de Brasil), en-us (Inglés americano), etc."
+
+msgid "help_anonymous_comments"
+msgstr "Si está seleccionado, los usuarios anónimos podrán añadir comentarios sin tener que iniciar una sesión. Recomendamos encarecidamente que utilice una solución Captcha para evitar el spam si esta opción está activada."
+
+msgid "help_atd_service_url"
+msgstr "El URL del servidor de corrección ortográfica a usar \"Tras la fecha límite\". El valor por defecto es el servidor público, pero en preferiblemente podría descargarlo e instalarlo por su cuenta y especificar su dirección aquí."
+
+msgid "help_atderrortypes_to_show"
+msgstr "Una lista de tipos de error que el corrector ortográfico debería revisar \"Tras la fecha límite\". Por defecto, todos los tipos de errores disponibles serán incluidos aquí."
+
+msgid "help_available_timezones"
+msgstr "Las zonas horarias que deberían estar disponibles para el portal. Pueden ser establecidas para usuarios y eventos"
+
+msgid "help_biography"
+msgstr "Una visión general breve de quién es usted y a qué se dedica. Será mostrada en su página de autor, enlazada desde los elementos que cree."
+
+msgid "help_captcha"
+msgstr "Utilice esta opción para activar o desactivar Captcha para los comentarios. Instale plone.formwidget.captcha, plone.formwidget.recaptcha, collective.akismet o collective.z3cform.norobots si no tiene ninguna opción disponible."
+
+msgid "help_change_note"
+msgstr "Introduzca un comentario que describa los cambios realizados."
+
+msgid "help_checkin_message"
+msgstr "Introduzca el mensaje a guardar junto con la nueva versión. Este debería explicar los cambios realizados a efectos de auditoría."
+
+msgid "help_contributors"
+msgstr "Los nombres de las personas que han contribuido a este elemento. Cada colaborador debería estar en una línea independiente."
+
+msgid "help_creators"
+msgstr "Personas responsables de la creación del contenido de este elemento. Por favor, introduzca una lista de nombres de usuario, uno por línea. El autor principal debería ser el primero."
+
+msgid "help_criteria_field_name"
+msgstr "No debe contener espacios, guiones bajos o mezcla de mayúsculas y minúsculas. El Nombre Corto es parte de la dirección web del elemento."
+
+msgid "help_current_folder_only"
+msgstr "Si selecciona esta opción, el árbol de navegación sólo mostrará la carpeta actual y sus hijos de primer nivel siempre."
+
+msgid "help_custom_view_fields"
+msgstr "Seleccione qué campos desea mostrar cuando 'Mostrar como Tabla' esté marcado."
+
+msgid "help_default_icon"
+msgstr "Icono a utilizar para las acciones sin icono específico. Una imagen de 16x16 píxeles."
+
+msgid "help_discussion_settings_editform"
+msgstr ""
+
+msgid "help_doctype"
+msgstr "Puede especificar una cadena Doctype, que será establecida en la salida, por ejemplo \"&lt;!DOCTYPE html&gt;\". Si se deja en blanco, se usará por defecto el Doctype XHTML 1.0 de transición, o el establecido en el tema Diazo."
+
+msgid "help_duplicate_login_names"
+msgstr "Al cambiar la configuración de inicio de sesión con correo electrónico en ${link} automáticamente se cambiará el nombre de inicio de sesión para los usuarios actuales. Esto puede fallar si hay duplicados. En esta página puede buscar duplicados."
+
+msgid "help_effective_date"
+msgstr "La fecha en la que el documento será publicado. Si no selecciona ninguna fecha, el documento será publicado inmediatamente."
+
+msgid "help_email_creation"
+msgstr "Introduzca su dirección de correo. Esto es necesario en caso de pérdida de su contraseña. Respetaremos su privacidad y no divulgaremos su dirección a terceros ni la expondremos en este sitio."
+
+msgid "help_email_creation_for_login"
+msgstr "Introduzca una dirección de correo. Esta será su nombre de inicio de sesión. Respetamos su privacidad, por lo que su dirección no será proporcionada a terceras partes o expuesta en modo alguno."
+
+msgid "help_enable_immediately"
+msgstr "Seleccione esta opción para habilitar el tema recién creado de forma inmediata."
+
+msgid "help_enable_new_theme"
+msgstr "Seleccione esta opción para habilitar el tema recién subido de forma inmediata."
+
+msgid "help_enable_table_of_contents_description"
+msgstr "Si está marcado, esto le mostrará una tabla de contenidos en la parte superior de la página."
+
+msgid "help_expiration_date"
+msgstr "La fecha en la que expira el documento. Esto hará automáticamente el documento invisible a otros a una fecha dada. Si no elije ninguna fecha, nunca expirará."
+
+msgid "help_ext_links_open_new_window"
+msgstr "Si está habilitado, todos los enlaces externos del área de contenido se abrirán en una nueva ventana."
+
+msgid "help_format_wysiwyg"
+msgstr "Si no está seguro de qué formato utilizar, seleccione Texto Plano y escriba el documento como suele hacer habitualmente."
+
+msgid "help_globally_enabled"
+msgstr "Si está seleccionado, se permite que los visitantes hagan comentarios en la web. Sin embargo, tiene que activar los comentarios para cada tipo de objeto específicamente antes de que se puedan añadir los comentarios."
+
+msgid "help_groupname"
+msgstr "Un identificador único para el grupo. No puede ser cambiado después de su creación."
+
+msgid "help_hostname_blacklist"
+msgstr "Si hay nombres de equipos en los que no quiere utilizar temas, puede enumerarlos aquí, uno por línea. Esto es útil durante el desarrollo de temas, de modo que pueda comparar sitios con y sin tema. En algunos casos, es posible que también desee proporcionar un alias de equipo sin tema para que los administradores de contenido pueda utilizar un Plone 'de serie'."
+
+msgid "help_include_contained_objects"
+msgstr "Si está marcado, se intentará modificar el estado de todo el contenido en las carpetas seleccionadas y sus subcarpetas."
+
+msgid "help_include_top_node"
+msgstr "Si desea o no mostrar el elemento superior o nodo 'raíz' del árbol de navegación. Está relacionado con la opción 'Nivel de inicio'."
+
+msgid "help_inherit_criteria"
+msgstr "Reducir los resultados de búsqueda de las Carpetas Inteligentes padre usando el criterio de esta Carpeta Inteligente."
+
+msgid "help_inherit_local_roles"
+msgstr "Por defecto, los permisos del contenedor de este elemento son heredados. Si deshabilita este comportamiento, sólo los permisos de compartición explícitamente definidos serán válidos. En la visión general, el símbolo ${image_confirm_icon} indica un valor heredado. De forma similar, el símbolo ${image_link_icon} indica un rol global, el cual es gestionado por el administrador del sitio."
+
+msgid "help_limit_number"
+msgstr "Si está marcado, sólo el se mostrará el 'Número de Elementos' indicado abajo."
+
+msgid "help_location"
+msgstr "Su localización - ciudad y país - o, en el contexto de una empresa, la localización de su oficina."
+
+msgid "help_location_dc"
+msgstr "La ubicación geográfica asociada con el elemento, si aplica."
+
+msgid "help_login_name_caps"
+msgstr "Los nombres de usuario y las contraseñas son sensibles a la capitalización, asegúrese que la tecla de bloqueo de mayúsculas ('caps lock') no está activada."
+
+msgid "help_mark_special_links"
+msgstr "Si está habilitado, todos los enlaces externos serán marcados con iconos específicos según el tipo de enlace."
+
+msgid "help_moderator_notification_enabled"
+msgstr "Si está seleccionado, se notifica al moderador cuando un nuevo comentario requiere de su atención. La dirección de correo electrónico del moderador se puede encontrar en la opción 'Configuración de correo' del panel de control (Dirección del remitente del sitio)"
+
+msgid "help_navigation_root"
+msgstr "Puede buscar y seleccionar una carpeta que actúe como la raíz del árbol de navegación. Déjelo en blanco para utilizar la raíz del sitio Plone."
+
+msgid "help_navigation_start_level"
+msgstr "Un valor entero que especifica el número de niveles de carpetas bajo la raíz del sitio que debe ser excedido para que se muestre el árbol de navegación. 0 indica que el árbol de navegación se debería mostrar en todas partes, incluyendo las páginas en la raíz del sitio. 1 indica que el árbol debería mostrarse en las carpetas localizadas en la raíz del sitio y por debajo, nunca a primer nivel."
+
+msgid "help_navigation_tree_depth"
+msgstr "Número de niveles de carpetas bajo la raíz del sitio que deben ser incluidas en la estructura de árbol del árbol de navegación. 0 indica que no hay límite. 1 indica que sólo se debe incluir la carpeta raíz."
+
+msgid "help_news_image"
+msgstr "Será mostrada en el listado de noticias, y en el mismo elemento de noticias. La imagen se escalará a un tamaño adecuado."
+
+msgid "help_nextprevious"
+msgstr "Esto habilita el widget siguiente/próximo en los elementos contenidos en esta carpeta."
+
+msgid "help_no_selectable_default_pages"
+msgstr "No hay elementos en esta carpeta que puedan ser seleccionados como página por defecto."
+
+msgid "help_parameter_expressions"
+msgstr "Puede definir aquí los parámetros que serán pasados al tema compilado. En su archivo de reglas, puede hacer referencia a un parámetro mediante <code>$name</code>. Los parámetros se definen utilizando expresiones TALES, que deben evaluarse como cadena, número, booleano o None. Las variables disponibles son <code>context</code>, <code>request</code>, <code>portal</code>, <code>portal_state</code>, y <code>context_state</code>. Defina una variable por línea, con el formato <code>nombre = expresión</code>."
+
+msgid "help_portal_timezone"
+msgstr "La configuración de zona horaria del portal. Los usuarios pueden establecer su propia zona horaria, si se han definido zonas horarias."
+
+msgid "help_portrait"
+msgstr "Para agregar su foto, haga clic en el botón <strong>Navegar</strong> y seleccione una foto suya. El tamaño recomendado es de 75 puntos de largo por 100 puntos de alto."
+
+msgid "help_publishing_comments"
+msgstr "Introduzca una breve descripción o algunos comentarios que serán agregados al histórico de la publicación. Si selecciona múltiples elementos, este comentario será adjuntado a todos ellos."
+
+msgid "help_redirect_links"
+msgstr "Al hacer clic en un tipo Enlace, ¿debería llevarse al usuario a la vista por defecto, o redirigirle al URL del Enlace?"
+
+msgid "help_relativepath_criteria_customrelativepath"
+msgstr "Introduzca una ruta relativa, p. ej.: <br /> '..' para la carpeta padre <br /> '../..' para la carpeta padre del padre <br />'../unacarpeta' para una carpeta hermana"
+
+msgid "help_remember_my_email"
+msgstr "Marque esta opción para que su dirección de correo se rellene automáticamente cuando inicie la sesión más tarde."
+
+msgid "help_remember_my_name"
+msgstr "Marcando la opción 'Recordar mi nombre' hará que el navegador guarde una cookie con su nombre de usuario. Cuando usted regrese al sitio más tarde, su nombre de usuario aparecerá automáticamente."
+
+msgid "help_render_body"
+msgstr "Si un elemento dispone de texto de cuerpo, lo muestra. En otro caso usa su descripción."
+
+msgid "help_replace_existing"
+msgstr "Seleccione esta opción para reemplazar cualquier tema existente que haya sido subido previamente."
+
+msgid "help_sharing_page_default_page"
+msgstr "Está ajustando los privilegios de compartición para una vista por defecto en un contenedor. Para ajustarlos para todo el contenedor, ${go_here}."
+
+msgid "help_shortname"
+msgstr "No debe contener espacios, guiones bajos, o mezcla de mayúsculas y minúsculas. El Nombre Corto es parte de la dirección web del elemento. "
+
+msgid "help_smtp_port"
+msgstr "El puerto de su servidor local de SMTP (correo saliente). Normalmente '25'."
+
+msgid "help_smtp_server"
+msgstr "La dirección de su servidor local de SMTP (correo saliente). Normalmente 'localhost', a menos que utilice un servidor externo para enviar sus correos."
+
+msgid "help_smtp_userid"
+msgstr "Nombre de usuario utilizado para la autenticación contra su servidor de correo. No es necesario salvo que utilice ESMTP."
+
+msgid "help_theme_base"
+msgstr "El tema base define una colección de plantillas y otros recursos que constituyen el contenido en crudo al que un tema es aplicado. La mayoría de los temas Diazo asumirán el tema base, de modo que modifique esto sólo si sabe lo que está haciendo."
+
+msgid "help_theme_enabled"
+msgstr "Si está habilitado, el tema Diazo actualmente configurado (de haberlo) será aplicado."
+
+msgid "help_user_name_creation_casesensitive"
+msgstr "Introduzca el nombre de usuario que desee utilizar. Generalmente algo como \"jperez\" o \"jose_perez\". No están permitidos caracteres especiales o espacios en el nombre de usuario. Los nombres de usuario y las contraseñas son sensibles a mayúsculas y minúsculas, asegúrese que la tecla de bloqueo de mayúsculas no está activada ('caps lock'). Este es el nombre que utilizará para identificarse."
+
+msgid "help_user_notification_enabled"
+msgstr "Si está seleccionado, los usuarios pueden solicitar recibir avisos por correo cuando haya nuevos comentarios."
+
+msgid "hostname_blacklist_description"
+msgstr "Si hay nombres de equipos en los que no quiere utilizar temas, puede enumerarlos aquí. Esto es útil durante el desarrollo de un tema, de modo que pueda comparar sitios con y sin tema. En algunos casos, es posible que también desee proporcionar un alias de equipo sin tema para que los administradores de contenido pueda utilizar un Plone 'de serie'."
+
+msgid "info_empty_dashboard"
+msgstr "Su cuadro de mando actualmente está vacío. Haga clic en la pestaña <em>editar</em> para asignar algunos portlets personales."
+
+msgid "label_atd_ignore_strings"
+msgstr "Una lista de cadenas que el corrector ortográfico a usar \"Tras la fecha límite\" debería ignorar. Nota: Esta opción es sólo aplicable cuando se ha elegido un corrector ortográfico apropiado previamente."
+
+msgid "label_cant_mail_password_reset"
+msgstr "Normalmente, le ofrecemos enviar un correo al usuario con instrucciones sobre cómo establecer una contraseña tras completar este formulario. Sin embargo, este sitio no tiene una configuración de correo válida. Puede corregir esto en la Configuración de correo."
+
+msgid "label_edit_default_view_container"
+msgstr "Está editando la vista por defecto de un contenedor. Si desea editar el propio contenedor, ${go_here}."
+
+msgid "label_filter_contained_types"
+msgstr "Este tipo de elemento actúa de contenedor de elemento de otros tipos de contenido. Qué tipos de elementos puede contener?"
+
+msgid "label_manage_portlets_default_view_container"
+msgstr "Está administrando los portlets de la vista por defecto de un contenedor. Si quería administrar los portlets del propio contenedor, ${go_here}."
+
+msgid "label_password_change_mail"
+msgstr "Se generará un URL que le será enviado por correo; utilice el enlace para abrir la página donde puede cambiar su contraseña y completar el proceso de registro."
+
+msgid "label_plone_com_description"
+msgstr "Para una introducción sobre Plone, casos de éxito, demos, proveedores, visite"
+
+msgid "label_search_entry"
+msgstr "Buscar una entrada en el registro de errores <span class=\"formHelp\"> (como por ejemplo \"1257962690.640.49636048561\")</span>"
+
+msgid "linkintegrity_instructions"
+msgstr "Al eliminar este elemento, romperá enlaces que existen en los siguientes elementos. Si esto es lo que realmente desea hacer, le recomendamos que antes elimine esas referencias."
+
+msgid "linkintegrity_update_info"
+msgstr "Información sobre integridad de enlaces actualizada para ${count} elemento(s) en ${time} segundos."
+
+msgid "linkintegrity_update_instructions"
+msgstr "Si hace clic en el siguiente botón se actualizará la información sobre la integridad de enlaces. Esto puede tardar un rato, especialmente en sitios grandes..."
+
+msgid "login_form_disabled"
+msgstr "Debido a que la autenticación basada en cookie esté deshabilitada, el inicio de sesión basado en cookies no está disponible."
+
+msgid "mailtemplate_registered_user_body"
+msgstr "Bienvenido ${fullname}, su cuenta de usuario ha sido creada. Su nombre de usuario es ${member}. Por favor, actívela visitando ${set_password} Debe activar su cuenta antes de ${expirationdate}"
+
+msgid "mailtemplate_reset_information"
+msgstr "El administrador del sitio le solicita que cambie su contraseña para el usuario '${userid}'. Su antigua contraseña ha dejado de ser válida."
+
+msgid "mailtemplate_tracking_information"
+msgstr "Si no esperaba recibir este correo, ignórelo por favor. Su contraseña no ha sido cambiada. La petición fue realizada desde la dirección IP ${ipaddress}"
+
+msgid "message_email_in_use"
+msgstr "La dirección de correo que ha seleccionado ya está en uso o no es válida como nombre de inicio de sesión. Por favor, seleccione otra."
+
+msgid "message_enable_comment_workflow"
+msgstr "activar el 'Workflow de Moderación de Comentarios' para el tipo de objeto Comentario"
+
+msgid "message_moderation_disabled"
+msgstr "La moderación está desactivada. Tiene que ${enable_comment_workflow} antes de poder moderar los comentarios aquí."
+
+msgid "message_permissions_blocking_link_redirect"
+msgstr "Está viendo esta página porque tiene permisos para editar este enlace. Los demás serán automáticamente redirigidos al URL destino del enlace."
+
+msgid "message_pwreset_expired"
+msgstr "Para su seguridad, los URLs de restablecimiento de contraseña son válidos sólo para ${hours} horas. Este URL ha caducado, pero puede ${message_request_new}."
+
+msgid "message_pwreset_invalid"
+msgstr "Disculpe, pero parece que ha realizado una petición incorrecta. Por favor, asegúrese de que copió el URL exactamente tal cual aparece en su correo y que introdujo su nombre de usuario correctamente."
+
+msgid "message_pwreset_invalid_with_email"
+msgstr "Disculpe, pero parece que ha realizado una petición incorrecta. Por favor, asegúrese de que copió el URL exactamente tal cual aparece en su correo y que introdujo su dirección de correo correctamente."
+
+msgid "message_send_feedback_confirm"
+msgstr "Se ha enviado un correo al administrador del sitio sobre sus preguntas y/o comentarios."
+
+msgid "msg_login_duplicates_found"
+msgstr "Los siguientes nombres de inicio de sesión serían usados por más de una cuenta:"
+
+msgid "network_urls_allowed"
+msgstr "Si está habilitado, se permite la utilización de urls de red (http, https) en el archivo de reglas y en esta configuración."
+
+msgid "openid_intro"
+msgstr "Si no tiene un OpenID, puede obtener uno en ${openid_myopenid}."
+
+msgid "parameter_expressions_description"
+msgstr "Puede definir aquí los parámetros que serán pasados al tema compilado. En su archivo de reglas, puede hacer referencia a un parámetro mediante $name. Los parámetros se definen utilizando expresiones TALES, que deben evaluarse como cadena, número, booleano o None. Las variables disponibles son `context`, `request`, `portal`, `portal_state`, y `context_state`."
+
+msgid "reset_passwords_msg"
+msgstr "A los siguientes usuarios se les ha enviado un correo con un enlace para restablecer su contraseña: ${user_ids}"
+
+msgid "sendto_mailtemplate_body"
+msgstr "Este enlace le ha sido enviado desde ${portal_url}. Ha recibido este correo porque alguien ha leído una página en ${portal_title} y pensó podría interesarle. Ha sido enviado por ${from_address} con el siguiente comentario: \"${comment}\" ${document_title} ${document_description} ${document_url}"
+
+msgid "site_feedback_mailtemplate_body"
+msgstr "Ha recibido este correo porque ${fullname} ${from_address} le ha enviado un comentario sobre el sitio administrado por usted en ${url}."
+
+msgid "status_fatal_password_mail"
+msgstr "Ha ocurrido un error al crear su cuenta: no ha sido posible enviarle las instrucciones para establecer su contraseña a su dirección de correo: ${address}"
+
+msgid "status_nonfatal_password_mail"
+msgstr "La cuenta ha sido creada, pero no ha sido posible enviar instrucciones para establecer la contraseña a esta dirección de correo: ${address}"
+
+msgid "text_errlog_notfound"
+msgstr "La entrada de registro especificada no se ha encontrado. Podría haber caducado. Si está utilizando una configuración ZEO (en cluster) con balanceo de carga, intente recargar la página hasta que obtenga respuesta del servidor adecuado del cluster."
+
+msgid "text_no_email_setup"
+msgstr "Este sitio no tiene una configuración de correo válida, por lo que no podrá utilizar los formularios de contacto."
+
+msgid "text_no_mailhost_configured"
+msgstr "No ha configurado un servidor de correo o una dirección de remitente para el sitio. Algunas funcionalidades incluyendo los formularios de contacto, las notificaciones por correo electrónico y el restablecimiento de contraseña no funcionarán. Vaya al ${label_mail_control_panel_link} para solucionar esto."
+
+msgid "text_no_member_email"
+msgstr "No dispone de dirección de correo, por lo que no podrá utilizar formularios de contacto. Por favor, edite su información personal."
+
+msgid "text_no_timezone_configured"
+msgstr "No ha establecido la zona horaria del portal. La gestión de la Fecha/Hora no funcionará correctamente para valores de fecha/hora que dependan de la zona horaria. Vaya a ${label_mail_event_settings_link} para corregir esto."
+
+msgid "theming_controlpanel_delete_confirm_description"
+msgstr "Esta operación no puede deshacerse. Tenga en cuenta que los temas no pueden ser eliminados del sistema de archivos desde Plone."
+
+msgid "theming_mapper_warning_live"
+msgstr "Este tema está actualmente activo. Cualquier cambio será reflejado en el sitio de forma inmediata."
+
+msgid "title_choose_default_view"
+msgstr "Seleccione el modo de vista para esta carpeta, o establezca un elemento de contenido como su vista por defecto."
+
+msgid "title_manage_contenttype_portlets"
+msgstr "${contenttype_icon} Administrar portlets de tipo de contenido para ${contenttype_name}"
+
+msgid "title_remove_index_html_for_display_control"
+msgstr "Elimine o cambie el nombre del elemento index_html para adquirir control total sobre cómo se muestra esta carpeta."
+
+msgid "tooltip_theme_preview"
+msgstr "Haga clic para ver una vista preliminar en tiempo real. Los formularios estarán deshabilitados en la vista preliminar."
+
+msgid "types_controlpanel_state_mapping_help"
+msgstr "Al cambiar de flujo de trabajo, debe seleccionar un estado equivalente en el nuevo flujo de trabajo."
+
+msgid "types_controlpanel_warn_remap"
+msgstr "Cambiar el flujo de trabajo de un tipo puede tardar un rato, y ralentizar el sitio significativamente mientras que el contenido está siendo actualizado a la nueva configuración."
+
+msgid "user_roles_note"
+msgstr "Tenga en cuenta que los roles aquí establecidos se aplican directamente a un usuario. El símbolo ${image_link_icon} indica un rol heredado por la pertenencia a un grupo."
+
+msgid "warning_contentrules_disabled"
+msgstr "Las reglas de contenido han sido deshabilitadas globalmente. No se ejecutarán las reglas asignadas hasta que sean rehabilitadas. Utilice el ${controlpanel_link} para habilitarlas de nuevo."
+
+msgid "working_copy_info"
+msgstr "Este elemento está siendo editado por ${creator} en ${working_copy} creado el ${created}."

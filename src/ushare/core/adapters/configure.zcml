@@ -1,0 +1,61 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="ushare">
+
+  <adapter
+    for="zope.interface.Interface"
+    provides=".favorites.IFavorite"
+    factory=".favorites.Favorite"
+    />
+
+  <adapter factory=".favorites.favoriteIndexer" name="favoritedBy" />
+
+  <adapter
+    for="zope.interface.Interface"
+    provides=".flash.IFlash"
+    factory=".flash.FlashMarker"
+    />
+
+  <adapter factory=".flash.flashIndexer" name="is_flash" />
+
+  <adapter
+    for="zope.interface.Interface"
+    provides=".important.IImportant"
+    factory=".important.ImportantMarker"
+    />
+
+  <adapter factory=".important.importantIndexer" name="is_important" />
+
+  <adapter
+    for="zope.interface.Interface"
+    provides=".notnotifypush.INotNotifyPush"
+    factory=".notnotifypush.NotNotifyPush"
+    />
+
+  <adapter factory=".notnotifypush.notNotifyPushIndexer" name="notNotifyPushBy" />
+
+  <adapter
+    for="zope.interface.Interface"
+    provides=".outoflist.IOutOfList"
+    factory=".outoflist.OutOfListMarker"
+    />
+
+  <adapter factory=".outoflist.outoflistIndexer" name="is_outoflist" />
+
+  <adapter
+    for="Products.PlonePAS.interfaces.membership.IMembershipTool
+         zope.interface.Interface"
+    provides=".portrait.IPortraitUploadAdapter"
+    factory=".portrait.PortraitUploadAdapter"
+    />
+
+  <adapter
+    for="zope.interface.Interface"
+    provides=".showinapp.IShowInApp"
+    factory=".showinapp.ShowInAppMarker"
+    />
+
+  <adapter factory=".showinapp.showinappIndexer" name="is_inapp" />
+
+</configure>

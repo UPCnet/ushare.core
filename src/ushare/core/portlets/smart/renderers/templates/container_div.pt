@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag=""
+      tal:condition="not:view/isAnon"
+      i18n:domain="base">
+
+<tal:items tal:define="items view/portlet/results;
+                       show_header view/portlet/data/show_header"
+           tal:condition="items">
+
+  <div id="portlet-smart"
+       tal:attributes="class python: 'ulearnbox show_header' if show_header else 'ulearnbox'">
+    <div class="osomcorner-wrapper"><div class="osomcorner"></div></div>
+
+    <h2 tal:condition="show_header"
+        tal:content="view/portlet/data/header"></h2>
+
+    <p tal:condition="view/portlet/data/description" tal:content="structure view/portlet/data/description"></p>
+
+    <div tal:attributes="class view/css_class">
+      <tal:item tal:repeat="item items">
+        <div tal:define="renderer python:view.portlet.getItemRenderer(item)"
+             tal:attributes="class renderer/css_class">
+          <tal:renderer replace="structure renderer/html"></tal:renderer>
+        </div>
+      </tal:item>
+    </div>
+
+    <a tal:condition="view/portlet/data/more_link"
+       tal:attributes="href view/portlet/data/more_link"
+       tal:content="view/portlet/data/more_text"
+       class="more_link"></a>
+  </div>
+
+   <script tal:condition="view/portlet/isUlearn" type="text/javascript" src="++ulearn++portlets/smart/javascripts/smartYT.js"></script>
+</tal:items>
+</html>

@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-03-23 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Victor Fernandez de Alba <sneridagh@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language: ca\n"
+"Language-Code: ca\n"
+"Language-Name: Catalan\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone\n"
+
+### plone.app.disussion ###
+
+msgid "label_add_comment"
+msgstr "Afegeix un comentari"
+
+msgid "comment_description_plain_text"
+msgstr "Podeu afegir un comentari omplint el següent formulari."
+
+msgid "label_login_to_add_comments"
+msgstr "Inicia sessió per afegir comentaris"
+
+
+### plone.app.locales - Add/Edit type tabs and contents ###
+
+msgid "Categorization"
+msgstr "Categorització"
+
+msgid "label_schema_categorization"
+msgstr "Categorització"
+
+msgid "label_schema_dates"
+msgstr "Dates"
+
+msgid "label_schema_default"
+msgstr "Per defecte"
+
+msgid "label_schema_ownership"
+msgstr "Propietari"
+
+msgid "This name will be displayed in the URL."
+msgstr "Aquest nom es mostrarà a l'URL."
+
+msgid "Short name"
+msgstr "Nom curt"
+
+
+### plone.app.locales - fuzzy ###
+
+msgid "description_advanced"
+msgstr "Usa els següents camps per configurar el fitxer de regles de Diazo i el prefix del camí absolut, o per habilitar usar el tema d'un servidor remot."
+
+msgid "description_basic_settings"
+msgstr "Per habilitar un tema registrat amb Plone, escull de la llista següent i assegurat <em>Habilitar el tema</em> està sel·leccionat. També es possible temes que no son pre-registrats en Plone. Usa la pestanya <em>Advanced</em> per configurar un tema manualment."
+
+msgid "description_contentrules_rule_assignments"
+msgstr "Aquesta regla està assignada als llocs següents."
+
+msgid "description_import"
+msgstr "Usa el formulari següent per pujar un arxiu Zip que contingui un tema"
+
+msgid "description_pas_users_listing"
+msgstr "Nota: Algun o tots els vostres connectors d'origen d'usuaris PAS no permeten llistar usuaris, per tant, potser no veureu els usuaris definits per aquests connectors a no ser que feu una cerca específica."
+
+msgid "description_quit_to_log_out"
+msgstr "Heu iniciat la sessió a través d'autenticació HTTP (p.e. l'Interfície d'Administració de Zope). Per tancar la sessió, heu de:"
+
+msgid "description_syndication_properties"
+msgstr "La sindicació permet compartir i sincronitzar aquesta carpeta des d'altres llocs web."
+
+msgid "doctype_description"
+msgstr "Pots especificar una cadena Doctype que serà "
+
+msgid "heading_edit_groupproperties"
+msgstr "Edita propietats del grup ${groupname}"
+
+msgid "heading_group_members_of"
+msgstr "Membres del grup ${groupname}"
+
+msgid "heading_quit_to_log_out"
+msgstr "Encara esteu connectat com a usuari de Zope"
+
+msgid "heading_registry"
+msgstr "Registre de configuració"
+
+msgid "heading_sections"
+msgstr "Seccions"
+
+msgid "heading_type_settings"
+msgstr "Paràmetres de tipus"
+
+msgid "help_anonymous_comments"
+msgstr "Si està seleccionada, els usuaris anònims podran afegir comentaris sense identificar-se. Es recomana la utilització de una eina de captcha per evitar comentaris spam si aquesta opció està activada."
+
+msgid "help_doctype"
+msgstr "La cadena de text que es col·locarà abans del primer tag \"html\" a totes les pàgines servides. Si es deixa en blanc s'utilitzarà \"&lt;!DOCTYPE html&gt;\" (p.ex. HTML5) o el doctype especificat pel tema Diazo habilitat."
+
+msgid "help_edit_comment_enabled"
+msgstr "Si es selecciona, dóna suport a l'edició i eliminació dels comentaris dels usuaris amb el permís 'Edita comentaris'"
+
+msgid "help_globally_enabled"
+msgstr "Si està seleccionada, es permet que els usuaris puguin afegir comentaris a l'espai. De tota manera, teniu que activar els comentaris per a cada tipus de contingut específicament abans de que pogueu afegir comentaris."
+
+msgid "help_hostname_blacklist"
+msgstr "Si hi han noms de host on no vols que s'apliqui el tema els pots llistar aquí. Això és útil durant el desenvolupament del tema per comparar els llocs webs amb el tema i sense el tema. En alguns casos s'utilitza per tenir un nom de host alias per que els administradors de contingut puguin usar el Plone en pla."
+
+msgid "help_moderation_enabled"
+msgstr "Si està seleccionat, els comentaris entraran en un estat \"pendent\" en què són invisibles per al públic. Un usuari amb permís 'Review comments' ('Reviewer' o 'Manager') pot aprovar comentaris perquè siguin visibles per al públic. Si desitja habilitar un comentari personalitzada de flux de treball, vostè ha d'anar al panell de control de tipus."
+
+msgid "help_new_password"
+msgstr "Introduïu la nova contrasenya (5 caràcters com a mínim)."
+
+msgid "help_password_creation"
+msgstr "5 caràcters com a mínim."
+
+msgid "help_search_email"
+msgstr "Cerca usuaris amb adreça de correu electrònic que contingui"
+
+msgid "help_search_fullname"
+msgstr "Retorna els usuaris amb noms complets que continguin aquest valor."
+
+msgid "help_search_name"
+msgstr "Cerca usuaris amb identificador que contingui"
+
+msgid "help_sender_from_address"
+msgstr "Si us plau, escriviu la vostra adreça de correu electrònic"
+
+msgid "help_sender_fullname"
+msgstr "Introduïu el vostre nom complet"
+
+msgid "help_smtp_port"
+msgstr "El port del servidor local d'SMTP (correu de sortida). Normalment '587' o '25'."
+
+msgid "help_text_transform"
+msgstr "Utilitzeu aquesta opció per escollir si el text del comentari ha de transformar-se. Pot escollir entre 'Text sense format' i 'text intel·ligent'. 'Text intel·ligent' converteix el text sense format en HTML on els salts de línia i sangria es conserven, i les adreces web i de correu electrònic es converteixen en enllaços."
+
+msgid "help_theme_archive"
+msgstr "Selecciona un fitxer a pujar. Aquest ha de ser un arxiu ZIP amb un directori superior que s'usarà com a identificador del tema. Aquest directori ha de contenir un fitxer <code>rules.xml</code> o un fitxer <code>manifest.cfg</code> indicant un fitxer de regles Diazo alternatiu."
+
+msgid "label_contentrules_rule_listing"
+msgstr "regles de contingut"
+
+msgid "label_item_count"
+msgstr "Nombre d'elements"
+
+msgid "label_search_entry"
+msgstr "Cerca una entrada del registre d'errors"
+
+msgid "label_sender_from_address"
+msgstr "Correu electrònic"
+
+msgid "label_short_name"
+msgstr "Nom curt"
+
+msgid "label_zmi_link"
+msgstr "Interfície d'administració de Zope"
+
+msgid "linkintegrity_update_info"
+msgstr "S'ha actualitzat la informació d'integritat d'enllaços per ${count} element/s."
+
+msgid "mail_notification_message"
+msgstr "S'ha publicat un comentari sobre el contingut ${title} en aquesta adreça: ${link}"
+
+msgid "message_pwreset_success"
+msgstr "La vostra contrasenya s'ha establert correctament. Ara podeu entrar amb la vostra contrasenya nova."
+
+msgid "narrow_search_options"
+msgstr "Filtra els resultats."
+
+msgid "text_no_pil_installed"
+msgstr "Avís: L'escalat d'imatges no funcionarà perquè el módul PIL no està instal·lat correctament al servidor."
+
+msgid "title_compare_revision"
+msgstr "&middot; Compara amb l'actual"
+
+msgid "title_manage_contentrules"
+msgstr "Regles de contingut"

@@ -1,0 +1,22 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="ushare">
+
+  <browser:page
+    name="add_user_catalog"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".setup.addUserPropertiesCatalog"
+    permission="base.webmaster"
+    template="views_templates/add_user_catalog.pt"
+    />
+
+  <browser:page
+    name="remove_user_catalog"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".setup.removeUserPropertiesCatalog"
+    permission="zope2.View"
+    template="views_templates/genweb_get_dxdocument_text_style.pt"
+    />
+
+</configure>

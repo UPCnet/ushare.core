@@ -1,0 +1,83 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ushare">
+
+  <!-- Convenience permission identifying authenticated and member users -->
+  <permission id="base.authenticated" title="Base: Authenticated Users" />
+  <permission id="base.member" title="Base: Member Users" />
+  <permission id="base.webmaster" title="Base: Webmaster Users" />
+
+  <grok:grok package="." />
+  <i18n:registerTranslations directory="locales" />
+  <includeDependencies package="." />
+
+  <include package=".adapters" />
+  <include package=".behaviors" />
+  <include package=".browser" />
+  <include package=".controlpanel" />
+  <include package=".directory" />
+  <include package=".portlets" />
+
+  <include file="patches.zcml" />
+
+  <!-- ++base++portlets -->
+  <plone:static
+      directory="portlets"
+      type="base"
+      name="portlets"
+      />
+
+  <interface
+      interface=".interfaces.IUshareCoreLayer"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="ushare.core"
+      />
+
+  <genericsetup:importStep
+      name="ushare.core.setupstep"
+      title="ushare.core special import handlers"
+      description=""
+      handler="ushare.core.setuphandlers.setupVarious" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="ushare.core"
+      directory="profiles/default"
+      description="Installs the ushare.core add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="ushare.core (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the ushare.core add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="ushare.core-hiddenprofiles" />
+
+  <adapter
+       for="Products.PlonePAS.interfaces.membership.IMembershipTool
+            zope.interface.Interface"
+       provides="ushare.core.adapters.portrait.IPortraitUploadAdapter"
+       factory="ushare.core.adapters.portrait.PortraitUploadAdapter"
+       />
+
+  <browser:jbot
+      directory="templates"
+      layer=".interfaces.IUshareCoreLayer"
+  />
+
+</configure>

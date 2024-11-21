@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BaseUPC\n"
+"POT-Creation-Date: 2021-01-26 13:14+0000\n"
+"PO-Revision-Date: 2018-02-05 11:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: ca\n"
+"Language-Name: Catalan\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: ushare.portlets\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: ca\n"
+
+#: ../../../../../ushare.portlets/ushare/portlets/configure.zcml:18
+msgid "Extension profile for ushare.portlets."
+msgstr "Perfil d'extensió per a ushare.portlets."
+
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:27
+msgid "Go to parent folder"
+msgstr "Anar a la carpeta principal"
+
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:36
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:23
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:24
+msgid "Info"
+msgstr "Informació"
+
+#: ../../../../../ushare.portlets/ushare/portlets/configure.zcml:26
+msgid "Uninstall profile for ushare.portlets"
+msgstr "Desinstal·lar el perfil per a ushare.portlets"
+
+#. Default: "There are legacy portlets defined here. Click the button to convert them to new-style portlets."
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:65
+msgid "action_convert_legacy_portlets"
+msgstr "Hi ha portlets heretats indicats aquí. Feu clic al botó per convertir-los a portlets d'estil nou."
+
+#. Default: "add them to the folder itself"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:28
+msgid "add_them_to_the_folder_itself"
+msgstr "afegiu-los a la mateixa carpeta"
+
+#: ../../../../../ushare.portlets/ushare/portlets/configure.zcml:18
+msgid "ushare.portlets"
+msgstr "ushare.portlets"
+
+#: ../../../../../ushare.portlets/ushare/portlets/configure.zcml:26
+msgid "ushare.portlets uninstall"
+msgstr "ushare.portlets (desinstal·lar)"
+
+#. Default: "Note that content type portlets are normally rendered below context portlets."
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-content-type.pt:45
+msgid "description_contenttype_portlets_below"
+msgstr "Recordeu que els portlets de tipus de contingut normalment es representen sota dels portlets de context."
+
+#. Default: "The left and right portlet slots will now display only those portlets assigned to this content type. Use the up, down, delete and edit links to manage user portlets. Use the drop-down list to add new portlets."
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-content-type.pt:39
+msgid "description_manage_contenttype_portlets"
+msgstr "Les ranures del portlet esquerre i dret ara mostraran només els portlets assignats a aquest tipus de contingut. Utilitzeu els enllaços cap amunt, cap avall, eliminar i editar per administrar els portlets d'usuari. Utilitzeu la llista desplegable per afegir nous portlets."
+
+#. Default: "The portlet columns will first display portlets explicitly assigned in this context. Use the buttons on each portlet to move them up or down, delete or edit them. To add a new portlet, use the drop-down list at the top of the column."
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:50
+msgid "description_manage_contextual_portlets"
+msgstr "Les columnes del portlet primer mostraran els portlets assignats explícitament en aquest context. Utilitza els botons a cada portlet per moure'ls cap amunt o cap avall, eliminar-los o editar-los. Per afegir un portlet nou, feu servir la llista desplegable a la part superior de la columna."
+
+#. Default: "If you wish to block or unblock certain categories of portlets, you can do so using the drop-down boxes. Portlets that are included by these categories are shown below the selection box."
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:57
+msgid "description_portlets_block_unblock"
+msgstr "Si voleu bloquejar o desbloquejar certes categories de portlets, pot fer-ho usant els quadres desplegables. Els portlets que estan inclosos en aquestes categories es mostren sota el quadre de selecció."
+
+#. Default: "Convert portlets"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:71
+msgid "label_convert_portlets"
+msgstr "Converteix portlets"
+
+#. Default: "You are managing the portlets of the default view of a container. If you wanted to manage the portlets of the container itself, ${go_here}."
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:42
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:29
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:30
+msgid "label_manage_portlets_default_view_container"
+msgstr "Està administrant els portlets de la vista per defecte d'un contenidor. Si voleu administrar els portlets del contenidor en si, ${go_here}."
+
+#. Default: "go here"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:42
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:29
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:30
+msgid "label_manage_portlets_default_view_container_go_here"
+msgstr "vine aquí"
+
+#. Default: "Manage portlets above content"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:35
+msgid "manage_portlets_above_content"
+msgstr "Administrar portlets sobre el contingut"
+
+#. Default: "Add, edit or remove a portlet above the content"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/viewlets.py:129
+msgid "manage_portlets_above_link"
+msgstr "Afegiu, editeu o elimineu un portlet sobre el contingut"
+
+#. Default: "Manage portlets below content"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:36
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:33
+msgid "manage_portlets_below_content"
+msgstr "Administrar portlets sota del contingut"
+
+#. Default: "Add, edit or remove a portlet below the content"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/viewlets.py:143
+msgid "manage_portlets_below_link"
+msgstr "Afegiu, editeu o elimineu un portlet sota del contingut"
+
+#. Default: "Add, edit or remove a portlet below the content title"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/viewlets.py:115
+msgid "manage_portlets_below_title_link"
+msgstr "Afegiu, editeu o elimineu un portlet sota el títol del contingut"
+
+#. Default: "If you add portlets here, they will only appear on this item. If instead you want portlets to appear on all items in this folder, ${manage-portletsbelowcontent_link}"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:26
+msgid "message_warning_below_content_area_dd"
+msgstr "Si afegiu portlets aquí, només apareixeran en aquest article. Si, per contra, desitja que apareguin els portlets en tots els elements d'aquesta carpeta, ${manage-portletsbelowcontent_link}"
+
+#. Default: "Is this really where you want to add portlets below the content?"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:24
+msgid "message_warning_below_content_area_dt"
+msgstr "És això realment on voleu afegir portlets sota del contingut?"
+
+#. Default: "Portlet well A"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:47
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:48
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:42
+msgid "portlet-well-a"
+msgstr "Portlet well A"
+
+#. Default: "Portlet well B"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:56
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:57
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:51
+msgid "portlet-well-b"
+msgstr "Portlet well B"
+
+#. Default: "Portlet well C"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:65
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelow.pt:66
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsbelowtitle.pt:60
+msgid "portlet-well-c"
+msgstr "Portlet well C"
+
+#. Default: "Return"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-content-type.pt:32
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:18
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manageportletsabove.pt:38
+msgid "return_to_view"
+msgstr "Retorna"
+
+#. Default: "Legacy portlets"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:64
+msgid "title_legacy_portlets"
+msgstr "Portlets heretats"
+
+#. Default: "${contenttype_icon} Manage content type portlets for ${contenttype_name}"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-content-type.pt:25
+msgid "title_manage_contenttype_portlets"
+msgstr "${contenttype_icon} Administrar portlets de tipus de contingut per a ${contenttype_name}"
+
+#. Default: "Manage portlets for ${context_title}"
+#: ../../../../../ushare.portlets/ushare/portlets/browser/templates/manage-contextual.pt:11
+msgid "title_manage_contextual_portlets"
+msgstr "Administrar portlets per a ${context_title}"

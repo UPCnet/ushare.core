@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BaseUPC\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2018-07-16 08:45+0100\n"
+"Last-Translator: \n"
+"Language-Team: Plone Team@UPCnet <plone.team@upcnet.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: ca\n"
+"Language-Name: Catalan\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: base\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: ca\n"
+
+#: ../profiles/default/portlets.xml
+msgid "A skinnable portlet which displays the results of a query"
+msgstr ""
+
+#: ../portlets/smart/smart.py:246
+msgid "Add Query Portlet"
+msgstr "Afegeix portlet query"
+
+#: ../behaviors.zcml:14
+msgid "Add field to mark a link to open in a new window when clicked."
+msgstr "Afegeix un camp per marcar un enllaç per obrir-lo en una finestra nova quan es fa clic."
+
+#: ../behaviors.zcml:24
+msgid "Adds searchable richtext behavior"
+msgstr "Afegeix el text enriquit com a acercable"
+
+#: ../controlpanel/core.py:142
+msgid "Base settings"
+msgstr "Configuració Base"
+
+#: ../controlpanel/core.py:58
+msgid "Cada línia és una fila d'icones. Si es deixa en blanc s'agafen els valors per defecte. Han d'omplir-se fins a 4 files obligatòriament."
+msgstr "Cada línia és una fila d'icones. Si es deixa en blanc s'agafen els valors per defecte. Han d'omplir-se fins a 4 files obligatòriament."
+
+#: ../controlpanel/core.py:167
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../controlpanel/core.py:164
+msgid "Changes saved"
+msgstr "Canvis desats"
+
+#: ../portlets/smart/smart.py:47
+msgid "Description of the portlet"
+msgstr "Descripció del portlet"
+
+#: ../portlets/smart/smart.py:261
+msgid "Edit Collection Portlet"
+msgstr "Edita portlet colecció"
+
+#: ../controlpanel/core.py:169
+msgid "Edit cancelled"
+msgstr "Edició cancel·lada"
+
+#: ../portlets/smart/smart.py:95
+msgid "If enabled, items will be selected randomly from the collection, rather than based on its sort order."
+msgstr "Si està activa, els elements seràn seleccionats a l'atzar de la col·lecció, en compte de per ordre de classificació."
+
+#: ../configure.zcml:54
+msgid "Installs the ushare.core add-on."
+msgstr "Instal·la el complement ushare.core"
+
+#: ../browser/views.py:103
+msgid "L'element es mostra a la App"
+msgstr "L'element es mostra a l'App."
+
+#: ../browser/views.py:100
+msgid "L'element no es mostra a la App"
+msgstr "L'element no es mostra a l'App."
+
+#: ../browser/views.py:60
+msgid "L'element s'ha desmarcat com flash"
+msgstr "L'element no es mostra als flash informatius."
+
+#: ../browser/views.py:40
+msgid "L'element s'ha desmarcat com important"
+msgstr "L'element no es mostra com a important."
+
+#: ../browser/views.py:80
+msgid "L'element s'ha desmarcat de la blacklist"
+msgstr "L'element s'ha eliminat del conjunt de notícies de totes les comunitats."
+
+#: ../browser/views.py:83
+msgid "L'element s'ha marcat com a blacklist"
+msgstr "L'element s'ha afegit al conjunt de notícies de totes les comunitats."
+
+#: ../browser/views.py:63
+msgid "L'element s'ha marcat com flash"
+msgstr "L'element es mostra als flash informatius."
+
+#: ../browser/views.py:43
+msgid "L'element s'ha marcat com important"
+msgstr "L'element es mostra com a important."
+
+#: ../portlets/smart/smart.py:107
+msgid "Label the 'Show more link' defined avobe"
+msgstr "Etiquetar el 'mostrar més enllaços' definit amb anterioritat."
+
+#: ../portlets/smart/smart.py:88
+msgid "Limit"
+msgstr "Llímit"
+
+#: ../portlets/smart/smart.py:102
+msgid "Link to display in the footer, leave empty to hide it"
+msgstr "Enllaç a vorer en el peu de pàgina. Deixar en blanc per amagar-lo."
+
+#: ../controlpanel/core.py:57
+msgid "Llista personalitzada d'icones per l'editor TinyMCE"
+msgstr "Llista personalitzada d'icones per l'editor TinyMCE"
+
+#: ../browser/views_templates/grid_events.pt:45
+#: ../browser/views_templates/grid_future_events.pt:51
+msgid "Mes informacio"
+msgstr "Més informació"
+
+#: ../behaviors.zcml:14
+msgid "Optional open link in a new window"
+msgstr "Comença la url per http:// si vols enllaçar fora del teu espai."
+
+#: ../portlets/smart/smart.py:83
+msgid "Override query sort order using folder order"
+msgstr ""
+
+#: ../portlets/smart/smart.py:46
+msgid "Portlet description"
+msgstr "Descripció del portlet"
+
+#: ../portlets/smart/smart.py:34
+msgid "Portlet header"
+msgstr "Capçalera del portlet"
+
+#: ../portlets/smart/smart.py:52
+msgid "Portlet view to use"
+msgstr "Vista del portlet"
+
+#: ../portlets/smart/smart.py:40
+msgid "Renders the header"
+msgstr "Capçalera del portlet"
+
+#: ../controlpanel/core.py:152
+msgid "Save"
+msgstr "Desa"
+
+#: ../behaviors.zcml:24
+msgid "Searchable RichText"
+msgstr "Text enriquit cercabe"
+
+#: ../portlets/smart/smart.py:94
+msgid "Select random items"
+msgstr "Selecciona elements aleatoris."
+
+#: ../portlets/smart/smart.py:101
+msgid "Show more link"
+msgstr "Mostra més enllaços"
+
+#: ../portlets/smart/smart.py:106
+msgid "Show more link text"
+msgstr "Mostra més enllaços de text."
+
+#: ../profiles/default/portlets.xml
+msgid "Smart portlet"
+msgstr "Descripció del portlet"
+
+#: ../portlets/smart/smart.py:70
+msgid "Sort the collection on this index"
+msgstr "Ordena la col·lecció en aquest índex"
+
+#: ../portlets/smart/smart.py:77
+msgid "Sort the results in reversed order"
+msgstr "Ordena el resultat amb ordre invers"
+
+#: ../portlets/smart/smart.py:89
+msgid "Specify the maximum number of items to show in the portlet. Leave this blank to show all items."
+msgstr "Especifiqueu el nombre màxim d'elements per mostrar al portlet. Deixi en blanc per mostrar tots els elements."
+
+#: ../adapters/flash.py:22
+msgid "Tells if an object is marked as flash"
+msgstr "Indica si un objecte està marcat com a flash"
+
+#: ../adapters/important.py:22
+msgid "Tells if an object is marked as important"
+msgstr "Indica si un objecte està marcat com a important"
+
+#: ../adapters/outoflist.py:22
+msgid "Tells if an object is marked as outoflist"
+msgstr "Indica si un objecte està marcat com a outoflist"
+
+#: ../adapters/showinapp.py:22
+msgid "Tells if an object is shown in App"
+msgstr ""
+
+#: ../behaviors/richtext.py:20
+msgid "Text"
+msgstr "Text"
+
+#: ../portlets/smart/smart.py:247
+msgid "This portlet displays a listing of items from a Collection."
+msgstr "El portlet mostra una llista d'elements de la col·lecció."
+
+#: ../portlets/smart/smart.py:35
+msgid "Title of the rendered portlet"
+msgstr "Títol del portlet"
+
+#. Default: "groupOfNames or groupOfUniqueNames"
+#: ../controlpanel/core.py:130
+msgid "Type of group to create on ldap"
+msgstr ""
+
+#: ../configure.zcml:63
+msgid "Uninstalls the ushare.core add-on."
+msgstr "Desinstal·la el complement ushare.core."
+
+#: ../controlpanel/core.py:50
+msgid "User properties extender"
+msgstr "Extensió de propietats d'usuaris"
+
+#. Default: "alt_base_dn"
+#: ../controlpanel/core.py:101
+msgid "alt_base_dn"
+msgstr "LDAP base dn"
+
+#. Default: "LDAP base dn"
+#: ../controlpanel/core.py:103
+msgid "alt_base_dn_help"
+msgstr "LDAP base dn"
+
+#. Default: "alt_bind_dn"
+#: ../controlpanel/core.py:83
+msgid "alt_bind_dn"
+msgstr "LDAP bind dn"
+
+#. Default: "LDAP bind dn"
+#: ../controlpanel/core.py:85
+msgid "alt_bind_dn_help"
+msgstr "LDAP bind dn"
+
+#. Default: "alt_bindpasswd"
+#: ../controlpanel/core.py:92
+msgid "alt_bindpasswd"
+msgstr "LDAP bind password"
+
+#. Default: "LDAP bind password"
+#: ../controlpanel/core.py:94
+msgid "alt_bindpasswd_help"
+msgstr "LDAP bind password"
+
+#. Default: "alt_ldap_uri"
+#: ../controlpanel/core.py:74
+msgid "alt_ldap_uri"
+msgstr "LDAP uri"
+
+#. Default: "URL del servidor ldap per aquest site"
+#: ../controlpanel/core.py:76
+msgid "alt_ldap_uri_help"
+msgstr "URL del servidor LDAP per aquest lloc"
+
+#: ../configure.zcml:54
+msgid "ushare.core"
+msgstr "ushare.core"
+
+#: ../configure.zcml:63
+msgid "ushare.core (uninstall)"
+msgstr "ushare.core (desinstal·lar)"
+
+#. Default: "create_group_type"
+#: ../controlpanel/core.py:128
+msgid "create_group_type"
+msgstr ""
+
+#: ../directory/indexers.py:51
+msgid "description"
+msgstr "Biografia"
+
+#. Default: "There are currently no events in this folder."
+#: ../browser/events.py:29
+msgid "description_no_events_in_folder"
+msgstr "En aquest moment no hi ha cap esdeveniment."
+
+#. Default: "ElasticSearch"
+#: ../controlpanel/core.py:65
+msgid "elasticsearch"
+msgstr "ElasticSearch"
+
+#. Default: "URL del servidor d'ElasticSearch per aquest site"
+#: ../controlpanel/core.py:67
+msgid "elasticsearch_help"
+msgstr "URL del servidor d'ElasticSearch per aquest lloc"
+
+#: ../directory/indexers.py:51
+msgid "email"
+msgstr "Correu electrònic"
+
+#: ../directory/indexers.py:51
+msgid "fullname"
+msgstr "Nom complet"
+
+#. Default: "groups_query"
+#: ../controlpanel/core.py:110
+msgid "groups_query"
+msgstr "Consulta de LDAP pels grups"
+
+#. Default: "LDAP groups query. Ex: (&(objectClass=groupOfNames))"
+#: ../controlpanel/core.py:112
+msgid "groups_query_help"
+msgstr "Consulta de LDAP pels grups. Ex: (|(objectClass=groupOfNames)(objectClass=groupOfUniqueNames))"
+
+#. Default: "Configuracio de Base Core"
+#: ../controlpanel/core.py:143
+msgid "help_base_core_settings_editform"
+msgstr "Configuració de Base Core"
+
+#: ../behaviors/openlinkin.py:22
+msgid "help_open_link_in_new_window"
+msgstr "Comença la url per http:// si vols enllaçar fora del teu espai."
+
+#: ../directory/indexers.py:51
+msgid "home_page"
+msgstr "Pàgina d'inici"
+
+#. Default: "Portlet view to use"
+#: ../portlets/smart/smart.py:51
+msgid "label_container_view"
+msgstr "Vista continguts"
+
+#. Default: "Search terms"
+#: ../portlets/smart/smart.py:58
+msgid "label_query"
+msgstr "Termes de cerca"
+
+#. Default: "Show header"
+#: ../portlets/smart/smart.py:39
+msgid "label_show_header"
+msgstr "Mostrar capçalera"
+
+#. Default: "Order as in folder"
+#: ../portlets/smart/smart.py:82
+msgid "label_sort_folderorder"
+msgstr "Ordre com a la carpeta"
+
+#. Default: "Sort on"
+#: ../portlets/smart/smart.py:69
+msgid "label_sort_on"
+msgstr "Ordenar en"
+
+#. Default: "Reversed order"
+#: ../portlets/smart/smart.py:76
+msgid "label_sort_reversed"
+msgstr "Ordre invers"
+
+#: ../directory/indexers.py:51
+msgid "location"
+msgstr "Localització"
+
+#: ../behaviors/openlinkin.py:21
+msgid "open_link_in_new_window"
+msgstr "Obrir en una nova finestra?"
+
+#. Default: "user_groups_query"
+#: ../controlpanel/core.py:119
+msgid "user_groups_query"
+msgstr "Consulta de LDAP pels usuaris dels grups"
+
+#. Default: "LDAP user groups query. Ex: (&(objectClass=groupOfNames)(member=%s))"
+#: ../controlpanel/core.py:121
+msgid "user_groups_query_help"
+msgstr "Consulta de LDAP pels usuaris dels grups. Ex: (&(objectClass=groupOfUniqueNames)(uniqueMember=%s))"
+
+#: ../directory/indexers.py:51
+msgid "username"
+msgstr "Usuari"

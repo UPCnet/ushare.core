@@ -1,0 +1,32 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  i18n_domain="ushare">
+
+  <utility
+    name="user_properties"
+    factory=".indexers.UserPropertiesSoupCatalogFactory"
+    />
+
+  <utility
+    name="ldap_groups"
+    factory=".indexers.GroupsSoupCatalogFactory"
+    />
+
+  <utility
+    name="user_news_searches"
+    factory=".indexers.UserNewsSearchSoupCatalog"
+    />
+
+  <utility
+    name="users_delete_local_roles"
+    factory=".indexers.UsersDeleteLocalRoles"
+    />
+
+  <utility
+    name="users_portrait"
+    factory=".indexers.UsersDeleteLocalRoles"
+    />
+
+</configure>

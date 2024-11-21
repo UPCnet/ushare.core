@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ushare">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package="collective.z3cform.datagridfield" />
+
+  <browser:resource
+    name="cpbase.png"
+    file="cpbase.png"
+    />
+
+  <browser:page
+    name="base-controlpanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".core.UshareCoreControlPanel"
+    permission="cmf.ManagePortal"
+    />
+
+  <utility
+    name="ushare.core.controlpanel.core.user_extenders"
+    provides="zope.schema.interfaces.IVocabularyFactory"
+    component=".core.RegisteredExtendersVocabularyFactory"
+    />
+
+</configure>

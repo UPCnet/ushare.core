@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+  <metal:block metal:define-macro="time">
+      <tal:omit-tag tal:content="day">22</tal:omit-tag>
+      <span tal:content="month" class="sr-only">novembre</span>
+  </metal:block>
+
+  <metal:block metal:define-macro="starttime">
+    <div role="presentation" aria-hidden="true" class="event-years" tal:attributes="title item/starttime" tal:content="item/starttime">horainici</div>
+  </metal:block>
+
+
+  <metal:block metal:define-macro="firstday">
+    <time class='event-days' tal:define="day item/firstday; month item/firstmonth">
+      <block metal:use-macro="context/macros-comunitats/time"></block>
+    </time>
+  </metal:block>
+
+  <metal:block metal:define-macro="lastday">
+    <time class='event-days' tal:define="day item/lastday; month item/lastmonth">
+      <block metal:use-macro="context/macros-comunitats/time"></block>
+    </time>
+  </metal:block>
+
+  <metal:block metal:define-macro="firstmonth">
+    <span role="presentation" aria-hidden="true" class="event-months" tal:attributes="title item/firstmonth" tal:content="item/abbrfirstmonth">primermes</span>
+  </metal:block>
+
+  <metal:block metal:define-macro="firstyear">
+    <span role="presentation" aria-hidden="true" class="event-years" tal:attributes="title item/firstyear" tal:content="item/firstyear">primerany</span>
+  </metal:block>
+
+  <metal:block metal:define-macro="sameday_samemonth">
+    <tal:sameday_samemonth condition="python: type == 'sameday_samemonth'">
+      <block metal:use-macro="context/macros-comunitats/firstday"></block>
+      <block metal:use-macro="context/macros-comunitats/firstmonth"></block>
+      <block metal:use-macro="context/macros-comunitats/firstyear"></block>
+    </tal:sameday_samemonth>
+  </metal:block>
+
+  <metal:block metal:define-macro="difday_samemonth">
+    <tal:difday_samemonth condition="python: type == 'difday_samemonth'">
+      <block metal:use-macro="context/macros-comunitats/firstday"></block>
+      <span class='event-days event-days-connector'>―</span>
+      <block metal:use-macro="context/macros-comunitats/lastday"></block>
+      <block metal:use-macro="context/macros-comunitats/firstmonth"></block>
+      <block metal:use-macro="context/macros-comunitats/firstyear"></block>
+    </tal:difday_samemonth>
+  </metal:block>
+
+  <metal:block metal:define-macro="difday_difmonth">
+    <tal:difday_difmonth condition="python: type == 'difday_difmonth'">
+      <block metal:use-macro="context/macros-comunitats/firstday"></block>
+      <block metal:use-macro="context/macros-comunitats/firstmonth"></block>
+      <block metal:use-macro="context/macros-comunitats/firstyear"></block>
+      <span class="event-days event-days-connector">―</span>
+      <block metal:use-macro="context/macros-comunitats/lastday"></block>
+      <span role="presentation" aria-hidden="true" class="event-months" tal:attributes="title item/lastmonth" tal:content="item/abbrlastmonth">ultimmes</span>
+      <span role="presentation" aria-hidden="true" class="event-years" tal:attributes="title item/lastyear" tal:content="item/lastyear">primerany</span>
+    </tal:difday_difmonth>
+  </metal:block>
+</html>

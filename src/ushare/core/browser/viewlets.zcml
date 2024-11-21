@@ -1,0 +1,17 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="ushare">
+
+  <browser:viewlet
+    name="contentleadimage"
+    for="plone.app.contenttypes.behaviors.leadimage.ILeadImage"
+    view="plone.app.layout.globals.interfaces.IViewView"
+    class="plone.app.contenttypes.behaviors.viewlets.LeadImageViewlet"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+    template="viewlets_templates/leadimage.pt"
+    layer="ushare.core.interfaces.IUshareCoreLayer"
+    permission="zope2.View"
+    />
+
+</configure>

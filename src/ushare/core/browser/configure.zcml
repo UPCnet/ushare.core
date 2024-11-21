@@ -1,0 +1,68 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  i18n_domain="ushare">
+
+  <browser:page
+    name="macros-comunitats"
+    for="*"
+    permission="zope.Public"
+    template="views_templates/macros.pt"
+    />
+
+  <browser:page
+    name="grid_events_view"
+    for="*"
+    template="views_templates/grid_events.pt"
+    class=".events.GridEventsView"
+    layer="..interfaces.IUshareCoreLayer"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="grid_future_events_view"
+    for="*"
+    template="views_templates/grid_future_events.pt"
+    class=".events.GridEventsView"
+    layer="..interfaces.IUshareCoreLayer"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="blank_template"
+    for="*"
+    layer="..interfaces.IUshareCoreLayer"
+    permission="zope.Public"
+    template="views_templates/blank_template.pt"
+    />
+
+  <browser:page
+    name="print_document_view"
+    for="plone.app.contenttypes.interfaces.IDocument"
+    layer="..interfaces.IUshareCoreLayer"
+    permission="zope2.View"
+    template="views_templates/print_document_view.pt"
+    />
+
+  <browser:page
+    name="download_files"
+    for="plone.app.contenttypes.interfaces.IFolder"
+    permission="cmf.ModifyPortalContent"
+    class=".folders.DownloadFiles"
+    />
+
+  <adapter
+    name="formatted_date_user_timezone"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    for="zope.interface.Interface
+         zope.publisher.interfaces.browser.IBrowserRequest
+         zope.publisher.interfaces.browser.IBrowserView"
+    factory=".formatted_date_user_timezone.FormattedDateUserTimezoneProvider"
+    />
+
+  <include file="setup.zcml" />
+  <include file="viewlets.zcml" />
+  <include file="views.zcml" />
+
+</configure>

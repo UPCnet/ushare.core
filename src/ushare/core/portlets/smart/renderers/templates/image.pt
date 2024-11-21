@@ -1,0 +1,11 @@
+<div class="titleResource">
+  <h3>
+    <a tal:attributes="href string:${view/item/getURL}/view;
+                       title view/item/Title"
+        tal:content="view/item/Title">
+    </a>
+  </h3>
+</div>
+<div class="contentResource image">
+  <img tal:attributes="src string:${view/item/getURL}/@@images/image/mini" />
+</div>

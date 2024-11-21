@@ -1,0 +1,6 @@
+[report]
+include =
+    src/ushare/*
+omit =
+    */test*
+    */upgrades/*

@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ushare">
+
+  <plone:behavior
+    title="Optional open link in a new window"
+    description="Add field to mark a link to open in a new window when clicked."
+    provides=".openlinkin.IOpenLinkInNewWindow"
+    factory=".openlinkin.OpenLinkInNewWindow"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    />
+
+  <adapter factory=".openlinkin.open_link_in_new_window" name="open_link_in_new_window" />
+
+  <plone:behavior
+    name="ushare.richtext"
+    title="Searchable RichText"
+    description="Adds searchable richtext behavior"
+    provides=".richtext.IRichTextCustom"
+    factory=".richtext.RichTextCustom"
+    for="plone.dexterity.interfaces.IDexterityContent"
+    marker=".richtext.IRichTextCustom"
+    />
+
+  <adapter factory=".showinapp.showinappIndexer" name="is_inapp" />
+
+</configure>

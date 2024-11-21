@@ -1,0 +1,173 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="ushare">
+
+    <include package="collective.monkeypatcher" />
+
+<!--     <monkey:patch
+        description="Extended configuration for TinyMCE"
+        class="Products.TinyMCE.utility.TinyMCE"
+        original="getToolbars"
+        replacement=".patches.getToolbars"
+        />
+
+    <monkey:patch
+        description="TinyMCE. To remove default values in styles and tablestyle"
+        class="Products.TinyMCE.exportimport.TinyMCESettingsXMLAdapter"
+        original="_importNode"
+        replacement=".patches._importNode"
+        /> -->
+
+    <monkey:patch
+        description="Unicode normalization aware searches"
+        class="Products.PlonePAS.plugins.property.ZODBMutablePropertyProvider"
+        original="testMemberData"
+        replacement=".patches.testMemberData"
+        />
+
+    <monkey:patch
+        description="Force the creation of users to lowercase"
+        class="plone.app.users.browser.register.BaseRegistrationForm"
+        original="generate_user_id"
+        replacement=".patches.generate_user_id"
+        />
+
+<!--     OJO Creo que se puede borrar ahora esta en /eggs/Products.CMFPlone-5.0.7-py2.7.egg/Products/CMFPlone/browser/search.py y ya filtra por *
+    <monkey:patch
+        description="Force the search of the site to be wild always"
+        class="plone.app.search.browser.Search"
+        original="filter_query"
+        replacement=".patches.filter_query"
+        /> -->
+
+<!-- TOREMOVE as soon it got fixed -->
+    <monkey:patch
+        description="CMFEditions versions_history_form doesn't show the preview for DX and five.pt"
+        class="Products.CMFEditions.browser.utils.GetMacros"
+        original="get_macros"
+        replacement=".patches.get_macros"
+        />
+
+<!--     <adapter
+        for="plone.dexterity.interfaces.IDexterityContent"
+        provides="Products.TinyMCE.adapters.interfaces.Save.ISave"
+        factory=".patches.Save"
+        /> -->
+
+    <monkey:patch
+        description="Enable event of update user member data properties"
+        class="Products.PlonePAS.tools.memberdata.MemberData"
+        original="setMemberProperties"
+        replacement=".patches.setMemberProperties"
+        />
+
+    <monkey:patch
+        description="pas_member view override to user the user local catalog"
+        class="Products.PlonePAS.browser.member.PASMemberView"
+        original="info"
+        replacement=".patches.info"
+        />
+
+    <monkey:patch
+        description="DocumentByLine method override to user the user local catalog"
+        class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+        original="author"
+        replacement=".patches.author"
+        />
+
+    <monkey:patch
+        description="Add subjects to searchableText"
+        module="plone.app.contenttypes.indexers"
+        original="SearchableText"
+        replacement=".patches.SearchableText"
+        />
+
+<!--     <monkey:patch
+        description="Force to all dexterity types to hide the right portlet on the add form"
+        module="plone.dexterity.browser.add.DefaultAddForm"
+        original="update"
+        replacement=".browser.dxforms.update"
+        /> -->
+
+     <monkey:patch
+        description="Force to the comments portlet to show comments in descending order from most newest to the most older"
+        module="plone.app.discussion.conversation.Conversation"
+        original="getThreads"
+        replacement=".patches.getThreads"
+        />
+
+     <monkey:patch
+        description="Patch to extend the features of the changeMemberPortrait"
+        class="Products.PlonePAS.tools.membership.MembershipTool"
+        original="changeMemberPortrait"
+        replacement=".patches.changeMemberPortrait"
+        />
+
+      <monkey:patch
+         description="Patch to extend the features of the deletePersonalPortrait"
+         class="Products.PlonePAS.tools.membership.MembershipTool"
+         original="deletePersonalPortrait"
+         replacement=".patches.deletePersonalPortrait"
+         />
+
+<!-- LDAP and user objects related patches -->
+     <monkey:patch
+        description="Que el LDAP no haga consulta dos veces si la primera vez el usuario devuelve Invalid credentials"
+        module="Products.LDAPUserFolder.LDAPDelegate.LDAPDelegate"
+        original="connect"
+        replacement=".patches.connect"
+        />
+
+    <monkey:patch
+        description="Para que si el osiris devuelve BadUsernameOrPasswordError no siga validando los plugins de autenticacion"
+        module="Products.PluggableAuthService.PluggableAuthService.PluggableAuthService"
+        original="_extractUserIds"
+        replacement=".patches._extractUserIds"
+        />
+
+     <monkey:patch
+        description="Force LDAP plugin authenticate to normalize userids and usernames to lowercase"
+        module="Products.LDAPUserFolder.LDAPUserFolder.LDAPUserFolder"
+        original="getUserByAttr"
+        replacement=".patches.getUserByAttr"
+        />
+
+     <monkey:patch
+        description="Force LDAP plugin enumerate to normalize userids and usernames to lowercase"
+        module="Products.LDAPMultiPlugins.LDAPMultiPlugin.LDAPMultiPlugin"
+        original="enumerateUsers"
+        replacement=".patches.enumerateUsers"
+        />
+
+     <monkey:patch
+        description="Solucionar usuarios con accento en el campo DN del LDAP"
+        module="Products.LDAPUserFolder.LDAPUserFolder.LDAPUserFolder"
+        original="getUserDetails"
+        replacement=".patches.getUserDetails"
+        />
+
+     <monkey:patch
+        description="Solucionar permisos del sharing cuando un usuario con el CN = DN con acento esta dentro de un grupo"
+        module="Products.LDAPUserFolder.LDAPUserFolder.LDAPUser"
+        original="getUserDN"
+        replacement=".patches.getUserDN"
+        />
+
+     <monkey:patch
+        description="Que no haya un batch huerfano"
+        module="plone.app.contenttypes.browser.folder.FolderView"
+        original="batch"
+        replacement=".patches.batch"
+        />
+
+     <monkey:patch
+        description="Que al guardar el profile se borren y se añadan todos los campos en el view_user_catalog"
+        module="plone.app.users.browser.account.AccountPanelForm"
+        original="_on_save"
+        replacement=".patches._on_save"
+        />
+
+
+
+</configure>

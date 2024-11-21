@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:block fill-slot="top_slot"/>
+</head>
+
+<body>
+
+<metal:main fill-slot="content">
+    <tal:main-macro metal:define-macro="main">
+
+      <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+          Status message
+      </div>
+
+      <div id="content">
+        <form method="post" enctype="multipart/form-data" action="remove_user_catalog">
+          Afegeix la llista d'usuaris a esborrar separats per coma:
+          <br>
+          <textarea class="form-control" rows="15" name="users" type="text"></textarea>
+          <br>
+          <button name="save" type="submit">Esborra usuaris</button>
+        </form>
+      </div>
+
+    </tal:main-macro>
+
+</metal:main>
+
+</body>
+</html>

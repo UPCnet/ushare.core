@@ -1,0 +1,58 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ushare">
+
+    <include package="plone.app.portlets" />
+
+    <plone:portlet
+        name="base.portlets.smart"
+        interface=".smart.smart.ISmart"
+        assignment=".smart.smart.Assignment"
+        renderer=".smart.smart.Renderer"
+        addview=".smart.smart.AddForm"
+        editview=".smart.smart.EditForm"
+        />
+
+    <utility
+        component=".smart.vocabularies.AvailablePortletContainerRenderersFactory"
+        name="base.portlet.smart.AvailablePortletContainerRenderers"
+        />
+
+    <adapter
+        name="li_container_renderer"
+        for="plone.app.portlets.portlets.base.IPortletRenderer"
+        provides=".smart.renderers.interfaces.IPortletContainerRenderer"
+        factory=".smart.renderers.renderers.ListPortletContainerRenderer"
+        />
+
+    <adapter
+        name="div_container_renderer"
+        for="plone.app.portlets.portlets.base.IPortletRenderer"
+        provides=".smart.renderers.interfaces.IPortletContainerRenderer"
+        factory=".smart.renderers.renderers.DivPortletContainerRenderer"
+        />
+
+    <adapter
+        name="carousel_container_renderer"
+        for="plone.app.portlets.portlets.base.IPortletRenderer"
+        provides=".smart.renderers.interfaces.IPortletContainerRenderer"
+        factory=".smart.renderers.renderers.CarouselPortletContainerRenderer"
+        />
+
+    <adapter
+        for="plone.app.contenttypes.interfaces.IImage"
+        provides=".smart.renderers.interfaces.IPortletItemRenderer"
+        factory=".smart.renderers.renderers.ImagePortletItemRenderer"
+        />
+
+    <adapter
+        for="Products.CMFCore.interfaces.IContentish"
+        provides=".smart.renderers.interfaces.IPortletItemRenderer"
+        factory=".smart.renderers.renderers.DefaultPortletItemRenderer"
+        />
+
+</configure>
